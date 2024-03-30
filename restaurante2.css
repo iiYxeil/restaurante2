@@ -25,8 +25,7 @@ a{
 .content-container {
     background-image: url('imagenes/neosushi.jpg');
     background-repeat: no-repeat;
-    background-size: 1650px 710px; /* Ajusta el tamaño de la imagen de fondo aquí */
-    width: ; /* Ajusta el ancho del contenedor */
+    background-size: 1650px 710px; /* Ajusta el tamaño de la imagen de fondo aquí */ /* Ajusta el ancho del contenedor */
     height: 800px; /* Ajusta la altura del contenedor */
 
 }
@@ -35,7 +34,6 @@ a{
 nav {
     font-family: "Kanit", sans-serif;
     font-weight: 600;
-    font-style: ;
     background-color: rgba(255, 255, 255, 80%);
     bottom: 0px; /* Puedes ajustar esta propiedad según sea necesario */
     padding: 0px 0px 15px 0px;
@@ -47,7 +45,6 @@ nav {
 }
 .nav-mid a,
 .nav-right a{
-    position: ;
     top: 10px;
 }
 
@@ -309,4 +306,28 @@ main {
 
 .container4 h1{
     padding-top: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container4 {
+        height: auto; /* Cambia la altura del contenedor para adaptarse al contenido */
+    }
+
+    .container4 a {
+        width: 80%; /* Ajusta el ancho del enlace para ocupar el 80% del contenedor */
+        height: auto; /* Altura automática para adaptarse al contenido */
+        margin: 0 auto; /* Centra el enlace horizontalmente */
+    }
+
+    .container4 img {
+        height: auto; /* Altura automática para adaptarse al ancho del contenedor */
+    }
+
+    .container4 p {
+        text-align: center; /* Alinea el párrafo al centro */
+        margin-top: 20px; /* Espacio superior */
+        left: auto; /* Elimina la posición izquierda */
+        bottom: auto; /* Elimina la posición inferior */
+    }
 }
