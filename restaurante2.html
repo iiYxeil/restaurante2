@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="restaurante2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="content-container">
+        <nav>
+            <div class="nav-all">
+                <div class="nav-left">
+                    <div class="main-left">
+                        <a href="#" class="menuboton">
+                            <i class="fas fa-bars"></i>
+                            <i class="fas fa-times" style="display: none;"></i>
+                        </a>
+                        </a>
+                    </div>
+            
+                    <div class="mini-left">
+                        <a href="#">HOLA</a>
+                        <a href="#"> Lin's SUSHI </a>
+                        <a href="#"> BLOG </a>
+                        <a href="#"> CONTACTO </a>
+                    </div>
+                </div>
+        
+                <div class="nav-mid">
+                    <div class="nav-title">
+                        <a href="#"> Lin's SUSHI </a>
+                    </div>
+                </div>
+        
+                <div class="nav-right">
+                    <div class="nav-buttons">
+                        <div class="button1">
+                            <a href="#"> RESERVA TU MESA </a>
+                        </div>
+                        
+                        <div class="button2">
+                            <a href="#"> HAZ TU PEDIDO </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <main>
+        <div class="container1">
+            <div class="container1-left">
+                <img src="imagenes/sushi1.jpg" alt="" width="760px">
+            </div>
+
+            <div class="container1-right">
+                <div class="texto">
+                    <h1> Elige calidad y precio en Neosushi</h1>
+
+                    <p> Descubre una experiencia gastronómica excepcional que fusiona lo mejor del sushi con una influencia mediterránea, ofreciendo un arte culinario único. Sumérgete en la tradición y la innovación, donde cada bocado es una obra maestra de sabores. Ven y prueba nuestras exquisitas especialidades y mucho más en el corazón de Pamplona, en el restaurante japonés más destacado de la ciudad. </p>
+                </div>
+                
+                <div class="container1-botones">
+                    <div class="container1-boton1">
+                        <a href="http://neosushi.es/menu-noche/" target="_blank"> Ver carta </a>
+                    </div>
+
+                    <div class="container1-boton2">
+                        <a href="imagenes/neomenudia.jpg" target="_blank"> Ver Menus </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="container2-left">
+                <div class="container2-texto">
+                    <h1> Disfruta de nuestro sushi cuando quieras!</h1>
+
+                    <p> Abrimos todos los dias de la semana para que vosotros, los clientes, tengais la oportunidad de probar nuestro sushi, por lo que no dudes en reservar</p>
+                </div>
+
+                <div class="container2-boton">
+                    <a href="#"> Reserva </a>
+                </div>
+            </div>
+
+            <div class="container2-right">
+                <img src="imagenes/sushi2.jpg" alt="" width="760px" height="400px">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="contacto1">
+                <div class="contacto1-imagen">
+                    <img src="imagenes/87390.png" alt="" width="60px">
+                </div>
+                <div class="contacto1-texto">
+                    <a href="https://www.instagram.com/neo_pamplona/" target="_blank"> @neo_pamplona</a>
+                </div>
+            </div>
+
+
+            <div class="contacto2">
+                <div class="contacto2-imagen">
+                    <img src="imagenes/WhatsApp_icon.png" alt="" width="60px">
+                </div>
+                <div class="contacto2-texto">
+                    <a href="#">+34 999 92 92 92</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container4">
+            <div class="container4-texto">
+                <h1> UBICACION </h1>
+            </div>
+            <div class="container4-a">
+                <a href="https://www.google.com/maps/place/NEO+SUSHI/@42.8086193,-1.6878165,17z/data=!3m1!4b1!4m6!3m5!1s0xd508dd668bcde23:0x94310d078546472c!8m2!3d42.8086154!4d-1.6852416!16s%2Fg%2F11jszw6r8_?entry=ttu"> 
+                    <img src="imagenes/Sin título.png" alt="" width="400px">
+                </a>
+            </div>
+
+            <p> P/Landaben Calle B 32</p>
+        </div>
+    </main>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const menuboton = document.querySelector('.menuboton');
+    const miniLeft = document.querySelector('.mini-left');
+    const iconBars = document.querySelector('.fa-bars');
+    const iconTimes = document.querySelector('.fa-times');
+
+    menuboton.addEventListener('click', function() {
+        if (miniLeft.style.display === 'block') {
+            miniLeft.style.display = 'none';
+            iconBars.style.display = 'inline';
+            iconTimes.style.display = 'none';
+        } else {
+            miniLeft.style.display = 'block';
+            iconBars.style.display = 'none';
+            iconTimes.style.display = 'inline';
+        }
+    });
+});
+    </script>
+</body>
+
+
+</html>
